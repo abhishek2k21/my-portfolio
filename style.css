@@ -299,24 +299,25 @@ body {
 .hero-tag {
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-xs);
-    padding: var(--spacing-xs) var(--spacing-md);
-    background: rgba(102, 126, 234, 0.15);
-    border: 1px solid rgba(102, 126, 234, 0.4);
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: linear-gradient(135deg, rgba(0, 242, 254, 0.25), rgba(102, 126, 234, 0.25));
+    border: 2px solid rgba(0, 242, 254, 0.6);
     border-radius: var(--radius-xl);
-    color: var(--accent-purple);
-    font-size: 0.875rem;
+    color: #FFFFFF;
+    font-size: 1rem;
     font-weight: 700;
     margin-bottom: var(--spacing-lg);
     animation: fadeSlideDown 0.8s ease-out;
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.4), 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .status-dot {
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    background: var(--accent-cyan);
-    box-shadow: var(--glow-cyan);
+    background: #00f2fe;
+    box-shadow: 0 0 10px #00f2fe, 0 0 20px rgba(0, 242, 254, 0.5);
     animation: pulse-glow 2s infinite;
 }
 
