@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 
-=======
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,368 +8,355 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
-<<<<<<< HEAD
 
-=======
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
 <body>
 
-    <div class="aurora-background">
-        <div class="aurora-dot"></div>
-        <div class="aurora-dot"></div>
-        <div class="aurora-dot"></div>
-        <div class="aurora-dot"></div>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
     </div>
 
-    <nav>
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">Abhishek Kumar</a>
-            <ul class="nav-links">
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">
+                <span class="logo-text">AK</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
 
-    <main>
-        <section id="hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="fade-in">Crafting Intelligent Backend and GenAI Solutions </h1>
-<<<<<<< HEAD
-                    <p class="fade-in-delay">Software Engineer with 2+ years of experience building and operating Spring
-                        Boot microservices for e-commerce and AI platforms. Specialized in backend development, API
-                        design, and performance optimization. Let's build innovative solutions together.</p>
-=======
-                    <p class="fade-in-delay">An Associate Software Engineer with over 1 year of experience in backend development, microservices, and e-commerce systems. Let's build the future, one line of code at a time.</p>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
-                    <div class="hero-buttons fade-in-delay-2">
-                        <a href="#projects" class="cta-button">View My Work</a>
-                        <a href="#contact" class="secondary-button">Get in Touch</a>
-                    </div>
+                <div class="hero-tag">
+                    <span class="status-dot"></span>
+                    Available for opportunities
                 </div>
-                <div class="hero-image-container fade-in-delay-2">
-                    <div class="image-wrapper">
-<<<<<<< HEAD
-                        <img src="images/image.png" alt="Abhishek Kumar">
-=======
-                        <img src="images/pic.jpeg" alt="Abhishek Kumar">
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
+                <h1 class="hero-title">
+                    <span class="gradient-text">Building the Future</span><br>
+                    with Backend & AI Solutions
+                </h1>
+                <p class="hero-description">
+                    Software Engineer with 2+ years of experience crafting scalable Spring Boot microservices for
+                    e-commerce and AI platforms. Passionate about clean code, performance optimization, and innovative
+                    solutions.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get in Touch</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>2+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>10+</h3>
+                        <p>APIs Built</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>Companies</p>
                     </div>
                 </div>
             </div>
-        </section>
+            <div class="hero-visual">
+                <div class="profile-card">
+                    <div class="profile-glow"></div>
+                    <img src="images/image.png" alt="Abhishek Kumar" class="profile-img">
+                    <div class="profile-badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                                stroke="#00D9FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Verified</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="skills" class="content-section">
-            <h2 class="section-title">Core Competencies</h2>
-            <div class="skills-grid-container glass-card">
-                <div class="skills-category">
-                    <h3>Backend & Databases</h3>
-                    <div class="skills-grid">
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-subtitle">Technologies and tools I work with to build exceptional products</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M9 9H15M9 12H15M9 15H12" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Backend & Databases</h3>
+                    <div class="skill-tags">
                         <span class="skill-tag">Java 8 & Spring Boot</span>
                         <span class="skill-tag">Microservices</span>
                         <span class="skill-tag">REST APIs & JPA</span>
-<<<<<<< HEAD
                         <span class="skill-tag">MySQL & SQL Optimization</span>
-                        <span class="skill-tag">JUnits & Mockito</span>
-                        <span class="skill-tag">LLD</span>
-=======
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Relational Database Design</span>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
+                        <span class="skill-tag">JUnit & Mockito</span>
+                        <span class="skill-tag">Low Level Design</span>
                     </div>
                 </div>
-                <div class="skills-category">
-                    <h3>DevOps & Cloud</h3>
-<<<<<<< HEAD
-                    <div class="skills-grid">
-=======
-                     <div class="skills-grid">
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M3 15C3 17.8284 3 19.2426 3.87868 20.1213C4.75736 21 6.17157 21 9 21H15C17.8284 21 19.2426 21 20.1213 20.1213C21 19.2426 21 17.8284 21 15"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M12 16V3M12 3L16 7M12 3L8 7" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="category-title">DevOps & Cloud</h3>
+                    <div class="skill-tags">
                         <span class="skill-tag">Docker & Kubernetes</span>
-                        <span class="skill-tag">CI/CD & Git</span>
+                        <span class="skill-tag">CI/CD Pipelines</span>
+                        <span class="skill-tag">Git & GitHub Actions</span>
                         <span class="skill-tag">GCP / AWS</span>
+                        <span class="skill-tag">Monitoring (Kibana, Splunk)</span>
                     </div>
                 </div>
-<<<<<<< HEAD
-                <div class="skills-category">
-                    <h3>Frontend & AI</h3>
-                    <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M9.5 2C8.67157 2 8 2.67157 8 3.5V4.5C8 5.32843 8.67157 6 9.5 6H14.5C15.3284 6 16 5.32843 16 4.5V3.5C16 2.67157 15.3284 2 14.5 2H9.5Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <path d="M9 6V7C9 8.65685 10.3431 10 12 10C13.6569 10 15 8.65685 15 7V6"
+                                stroke="currentColor" stroke-width="2" />
+                            <rect x="4" y="8" width="16" height="13" rx="2" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Frontend & AI</h3>
+                    <div class="skill-tags">
                         <span class="skill-tag">React.js & Vue</span>
                         <span class="skill-tag">Gen AI & LLMs/NLP</span>
                         <span class="skill-tag">WebSockets</span>
-                        <span class="skill-tag">Advanced Data Structures</span>
-=======
-                 <div class="skills-category">
-                    <h3>Frontend & AI</h3>
-                     <div class="skills-grid">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Gen AI & LLMs</span>
-                        <span class="skill-tag">Advanced Data Structures</span>
-                        <span class="skill-tag">Data Munging</span>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
+                        <span class="skill-tag">Chart.js & Data Viz</span>
+                        <span class="skill-tag">Advanced DSA</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="projects" class="content-section">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="project-grid">
-<<<<<<< HEAD
-                <div class="project-card glass-card">
-                    <div class="card-border"></div>
-                    <div class="project-content">
-                        <h3>AI Note & Database Manager</h3>
-                        <p>An advanced AI application allowing database management via natural language, using GPT-4o
-                            and a secure confirmation workflow.</p>
-                        <div class="tech-stack">
-                            <span>Python</span><span>OpenAI</span><span>Streamlit</span><span>PostgreSQL</span>
+    <!-- Projects Section -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing my recent work and side projects</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M9.66347 17H14.3365M12 3V4M18.3635 5.63672L17.6564 6.34383M21 12H20M4 12H3M6.34315 6.34383L5.63604 5.63672M8 17C8 14.2386 10.2386 12 13 12C15.7614 12 18 14.2386 18 17C18 19.7614 13 22 13 22C13 22 8 19.7614 8 17Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <a href="https://github.com/abhishek2k21/cognitive-api-agent.git" target="_blank"
-                            class="project-link">View Project &rarr;</a>
-=======
-                 <div class="project-card glass-card">
-                    <div class="card-border"></div>
-                    <div class="project-content">
-                        <h3>AI Note & Database Manager</h3>
-                        <p>An advanced AI application allowing database management via natural language, using GPT-4o and a secure confirmation workflow.</p>
-                        <div class="tech-stack">
-                            <span>Python</span><span>OpenAI</span><span>Streamlit</span><span>PostgreSQL</span>
+                        <span class="project-status">AI Powered</span>
+                    </div>
+                    <h3 class="project-title">AI Note & Database Manager</h3>
+                    <p class="project-description">An advanced AI application that enables database management through
+                        natural language commands, powered by GPT-4o with a secure confirmation workflow and intelligent
+                        query generation.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">OpenAI</span>
+                        <span class="tech-badge">Streamlit</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/abhishek2k21/cognitive-api-agent.git" target="_blank"
+                        class="project-link">
+                        View on GitHub
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9 22V12H15V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </div>
-                        <a href="https://github.com/abhishek2k21/cognitive-api-agent.git" target="_blank" class="project-link">View Project &rarr;</a>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
+                        <span class="project-status">Backend</span>
+                    </div>
+                    <h3 class="project-title">E-Commerce Backend System</h3>
+                    <p class="project-description">A comprehensive REST API platform for e-commerce operations featuring
+                        robust CRUD operations, user validation, secure authentication, and scalable microservices
+                        architecture.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Java</span>
+                        <span class="tech-badge">Spring Boot</span>
+                        <span class="tech-badge">JPA</span>
+                        <span class="tech-badge">MySQL</span>
+                    </div>
+                    <a href="https://github.com/abhishek2k21/E-Commerce-Backend" target="_blank" class="project-link">
+                        View on GitHub
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Professional Journey</h2>
+                <p class="section-subtitle">My professional experience and contributions</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Software Development Engineer</h3>
+                                <p class="timeline-company">ASSISTARMY</p>
+                            </div>
+                            <span class="timeline-date">Nov 2024 - Present</span>
+                        </div>
+                        <ul class="timeline-list">
+                            <li>Building backend APIs powering a real-time digital human assistant platform with focus
+                                on low-latency conversations and seamless AI orchestration</li>
+                            <li>Designed and deployed REST and WebSocket APIs orchestrating speech-to-text, LLM,
+                                text-to-speech, and avatar rendering services for immersive user experiences</li>
+                            <li>Implemented session and context management systems maintaining conversation history and
+                                state across multiple turns and reconnects</li>
+                            <li>Integrated third-party AI providers (LLM, STT, TTS) behind a unified backend interface,
+                                simplifying client integration for web and Unreal-based applications</li>
+                            <li>Built resilience features including intelligent timeouts, retries, and graceful
+                                fallbacks for downstream AI services to ensure platform reliability</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="project-card glass-card">
-                    <div class="card-border"></div>
-<<<<<<< HEAD
-                    <div class="project-content">
-                        <h3>E-Commerce Backend</h3>
-                        <p>A complete REST API for an e-commerce platform, featuring robust CRUD operations and user
-                            validation at every critical step.</p>
-                        <div class="tech-stack">
-                            <span>Java</span><span>Spring Boot</span><span>JPA</span><span>MySQL</span>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Associate Software Engineer</h3>
+                                <p class="timeline-company">Speedbae Digital Private Limited</p>
+                            </div>
+                            <span class="timeline-date">Nov 2023 - Oct 2024</span>
                         </div>
-                        <a href="https://github.com/abhishek2k21/E-Commerce-Backend" target="_blank"
-                            class="project-link">View Project &rarr;</a>
-=======
-                     <div class="project-content">
-                        <h3>E-Commerce Backend</h3>
-                        <p>A complete REST API for an e-commerce platform, featuring robust CRUD operations and user validation at every critical step.</p>
-                         <div class="tech-stack">
-                            <span>Java</span><span>Spring Boot</span><span>JPA</span><span>MySQL</span>
-                        </div>
-                        <a href="https://github.com/abhishek2k21/E-Commerce-Backend" target="_blank" class="project-link">View Project &rarr;</a>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
+                        <ul class="timeline-list">
+                            <li>Owned core Promotion, Checkout, and Payment services, designing and maintaining 10+ REST
+                                APIs powering live order and payment flows for e-commerce platform</li>
+                            <li>Optimized MySQL queries and database indexes, achieving 30-40% latency reduction in
+                                critical APIs and significantly improving checkout stability during peak traffic</li>
+                            <li>Built promotion analytics endpoints and React + Chart.js dashboards delivering real-time
+                                campaign insights to business stakeholders</li>
+                            <li>Led payment service API migration using dual-version handlers and phased rollout
+                                strategy (10% → 50% → 100%), achieving zero-downtime deployments</li>
+                            <li>Maintained 200+ unit and integration tests using JUnit and Mockito, ensuring high code
+                                quality and preventing regressions in production systems</li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="experience" class="content-section">
-            <h2 class="section-title">Professional Journey</h2>
-            <div class="experience-timeline">
-                <div class="timeline-item glass-card">
-<<<<<<< HEAD
-                    <div class="card-border"></div>
-                    <div class="timeline-dot"></div>
-                    <h3>Software Development Engineer</h3>
-                    <p class="company">ASSISTARMY</p>
-                    <p class="date">Nov 2024 - Present</p>
-                    <ul>
-                        <li>Build backend APIs powering a real-time digital human assistant platform with focus on
-                            low-latency conversations.</li>
-                        <li>Designed REST and WebSocket APIs orchestrating speech-to-text, LLM, text-to-speech, and
-                            avatar rendering services.</li>
-                        <li>Developed session and context management maintaining conversation history and state across
-                            multiple turns.</li>
-                        <li>Integrated third-party AI providers behind a unified backend interface for web and
-                            Unreal-based front ends.</li>
-                        <li>Implemented resilience features including timeouts, retries, and graceful fallbacks for
-                            downstream AI services.</li>
-=======
-                     <div class="card-border"></div>
-                    <div class="timeline-dot"></div>
-                    <h3>Associate Software Engineer</h3>
-                    <p class="company">Speedbae Digital Private Limited</p>
-                    <p class="date">July 2024 - Present</p>
-                    <ul>
-                        <li>Develop and enhance e-commerce backend services using Java and Spring Boot.</li>
-                        <li>Work on real-time order tracking, payment integrations, and promotion analytics.</li>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
-                    </ul>
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <h2 class="contact-title">Let's Build Something Amazing</h2>
+                    <p class="contact-text">I'm currently seeking new opportunities and open to freelance projects.
+                        Whether you have an idea to discuss, a role to fill, or just want to connect, feel free to reach
+                        out!</p>
+                    <div class="contact-info">
+                        <a href="mailto:iamabhishek2k1@gmail.com" class="contact-email">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M3 8L10.89 13.26C11.5279 13.672 12.4721 13.672 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            iamabhishek2k1@gmail.com
+                        </a>
+                    </div>
                 </div>
-                <div class="timeline-item glass-card">
-                    <div class="card-border"></div>
-                    <div class="timeline-dot"></div>
-<<<<<<< HEAD
-                    <h3>Associate Software Engineer</h3>
-                    <p class="company">Speedbae Digital Private Limited</p>
-                    <p class="date">Nov 2023 - Oct 2024</p>
-                    <ul>
-                        <li>Owned core Promotion, Checkout, and Payment services, designing and maintaining 10+ REST
-                            APIs for live order flows.</li>
-                        <li>Optimized MySQL queries and indexes, reducing key API latency by 30-40% and improving
-                            checkout stability during peak traffic.</li>
-                        <li>Built promotion analytics endpoints and React + Chart.js dashboards providing real-time
-                            insights for business teams.</li>
-                        <li>Led payment service API migration using phased rollout (10% → 50% → 100%) achieving
-                            zero-downtime deployments.</li>
-                        <li>Maintained high test coverage with JUnit and Mockito, adding 200+ unit/integration tests for
-                            critical flows.</li>
-=======
-                    <h3>Java Developer Intern</h3>
-                    <p class="company">Speedbae Digital Private Limited</p>
-                    <p class="date">March 2023 - February 2024</p>
-                    <ul>
-                        <li>Completed a 6-month online internship as a Java Developer.</li>
-                        <li>Contributed to backend modules, fixed critical bugs, and improved API documentation.</li>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="content-section">
-            <h2 class="section-title">Education</h2>
-<<<<<<< HEAD
-            <div class="education-grid">
-=======
-             <div class="education-grid">
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
-                <div class="education-card glass-card">
-                    <div class="card-border"></div>
-                    <h3>Bachelor of Technology, CSE</h3>
-                    <p class="institution">Chaibasa Engineering College</p>
-                    <p class="date">Graduated June 2024</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications" class="content-section">
-            <h2 class="section-title">Certifications</h2>
-<<<<<<< HEAD
-            <div class="cert-grid">
-                <div class="cert-card glass-card">
-                    <div class="card-border"></div>
-                    <h3>Intellipath Java</h3>
-                    <p class="institution">Intellipath</p>
-                </div>
-=======
-             <div class="cert-grid">
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
-                <div class="cert-card glass-card">
-                    <div class="card-border"></div>
-                    <h3>Advanced Software Engineering</h3>
-                    <p class="institution">Walmart Global Tech & Forage</p>
-<<<<<<< HEAD
-                    <a href="certificates/walmart_certificate.pdf" target="_blank" class="cert-link">View
-                        Certificate</a>
-                </div>
-                <div class="cert-card glass-card">
-                    <div class="card-border"></div>
-                    <h3>Google Digital Marketing & E-commerce</h3>
-                    <p class="institution">Google & Coursera</p>
-                    <a href="certificates/GoogleDigitalmarketing.pdf" target="_blank" class="cert-link">View
-                        Certificate</a>
-                </div>
-                <div class="cert-card glass-card">
-                    <div class="card-border"></div>
-                    <h3>Java Developer Internship</h3>
-                    <p class="institution">Speedbae Digital Private Limited</p>
-                    <a href="certificates/Speebade_Internship.pdf" target="_blank" class="cert-link">View
-                        Certificate</a>
-=======
-                    <a href="certificates/walmart_certificate.pdf" target="_blank" class="cert-link">View Certificate</a>
-                </div>
-                 <div class="cert-card glass-card">
-                    <div class="card-border"></div>
-                    <h3>Google Digital Marketing & E-commerce</h3>
-                    <p class="institution">Google & Coursera</p>
-                    <a href="certificates/GoogleDigitalmarketing.pdf" target="_blank" class="cert-link">View Certificate</a>
-                </div>
-                 <div class="cert-card glass-card">
-                    <div class="card-border"></div>
-                    <h3>Java Developer Internship</h3>
-                    <p class="institution">Speedbae Digital Private Limited</p>
-                    <a href="certificates/Speebade_Internship.pdf" target="_blank" class="cert-link">View Certificate</a>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="content-section">
-            <h2 class="section-title">Let's Collaborate</h2>
-<<<<<<< HEAD
-            <div class="contact-content glass-card">
-                <p>I'm currently seeking new opportunities and I'm open to freelance projects. If you have an idea, a
-                    project, or a role you'd like to discuss, my inbox is always open.</p>
-                <div class="contact-social-links">
-                    <a href="https://www.linkedin.com/in/abhishek-kumar-029625240/" target="_blank"
-                        class="social-icon-link" aria-label="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class="social-icon-svg">
-                            <path fill="#0077B5"
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/abhishek-kumar-029625240/" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
                                 d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                         </svg>
+                        <span>LinkedIn</span>
                     </a>
-                    <a href="https://github.com/abhishek2k21" target="_blank" class="social-icon-link"
-                        aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class="social-icon-svg">
-                            <path fill="#FFFFFF"
+                    <a href="https://github.com/abhishek2k21" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
                                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
-                    </a>
-                    <a href="mailto:iamabhishek2k1@gmail.com" class="social-icon-link" aria-label="Email">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                            class="social-icon-svg">
-                            <path fill="#00E1FF"
-                                d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
-                        </svg>
+                        <span>GitHub</span>
                     </a>
                 </div>
-=======
-             <div class="contact-content glass-card">
-                <p>I'm currently seeking new opportunities and I'm open to freelance projects. If you have an idea, a project, or a role you'd like to discuss, my inbox is always open.</p>
-                 <div class="contact-social-links">
-                     <a href="https://www.linkedin.com/in/abhishek-kumar-029625240/" target="_blank" class="social-icon-link" aria-label="LinkedIn">
-                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="social-icon-svg">
-                             <path fill="#0077B5" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                         </svg>
-                     </a>
-                    <a href="https://github.com/abhishek2k21" target="_blank" class="social-icon-link" aria-label="GitHub">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="social-icon-svg">
-                            <path fill="#FFFFFF" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                    </a>
-                    <a href="mailto:kumar.abhi2k1@gmail.com" class="social-icon-link" aria-label="Email">
-                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="social-icon-svg">
-                           <path fill="#00E1FF" d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
-                       </svg>
-                    </a>
-                 </div>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <footer class="site-footer">
-        <p>Designed & Built by Abhishek Kumar</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Abhishek Kumar. Designed & Built with passion.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
-<<<<<<< HEAD
 
 </html>
-=======
-</html>
->>>>>>> 4f2fb3262243f80f36483fedfd5cffb931ea9f03
