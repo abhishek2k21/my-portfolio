@@ -46,13 +46,16 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 body {
     background-color: var(--bg-deep);
     color: var(--text-primary);
     font-family: var(--font-body);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     line-height: 1.6;
     /* Deep Atmos Background */
     background-image:
