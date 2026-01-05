@@ -76,7 +76,31 @@ window.addEventListener('scroll', () => {
 });
 
 // Glass card hover effect with mouse tracking
-// Glass card hover effect removed for minimal theme
+// Mouse tracking for Deep Glass Spotlight effect
+document.querySelectorAll('.skill-category, .project-card, .timeline-content').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        card.style.setProperty('--mouse-x', `${x}px`);
+        card.style.setProperty('--mouse-y', `${y}px`);
+
+        // 3D Tilt Effect
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const rotateX = ((y - centerY) / centerY) * -5; // Max -5deg to 5deg
+        const rotateY = ((x - centerX) / centerX) * 5;
+
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+        card.style.setProperty('--mouse-x', '50%');
+        card.style.setProperty('--mouse-y', '50%');
+    });
+});
 
 // Typing effect for hero title (optional - can be disabled)
 const heroTitle = document.querySelector('.hero-title');
