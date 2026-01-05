@@ -30,27 +30,54 @@ window.addEventListener('scroll', () => {
 // Parallax effect for gradient orbs
 // Parallax effect removed for minimal theme
 
-// Intersection Observer for fade-in animations
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
+// Advanced Scroll Reveal Observer
+const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('reveal', 'active');
+
+            // Add stagger classes directly to Grid children if the Grid itself is revealed
+            if (entry.target.classList.contains('skills-grid') || entry.target.classList.contains('projects-grid')) {
+                const children = entry.target.children;
+                Array.from(children).forEach((child, index) => {
+                    child.style.transitionDelay = `${index * 100}ms`;
+                    child.classList.add('reveal', 'active');
+                });
+            }
+
+            revealObserver.unobserve(entry.target);
         }
     });
-}, observerOptions);
+}, {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+});
 
-// Observe all sections and cards
-document.querySelectorAll('.skill-category, .project-card, .timeline-item').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(30px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
+// Elements to animate
+const revealSelectors = [
+    '.hero-title',
+    '.hero-description',
+    '.hero-cta',
+    '.stat-item',
+    '.section-header',
+    '.timeline-item',
+    '.contact-content',
+    '.skills-grid',  // Verify we observe the grid container for staggering
+    '.projects-grid'
+];
+
+document.querySelectorAll(revealSelectors.join(', ')).forEach(el => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+});
+
+// Also observe individual glass cards just in case they aren't caught by grid logic
+document.querySelectorAll('.skill-category, .project-card').forEach(el => {
+    el.classList.add('reveal');
+    // If parent is observed grid, don't observe individually to avoid double trigger
+    if (!el.parentElement.classList.contains('skills-grid') && !el.parentElement.classList.contains('projects-grid')) {
+        revealObserver.observe(el);
+    }
 });
 
 // Add active state to nav links based on scroll position
