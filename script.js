@@ -12,34 +12,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar scroll effect
-let lastScroll = 0;
+// Minimal Navbar scroll effect
 const navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > 100) {
-        navbar.style.background = 'rgba(10, 10, 15, 0.95)';
-        navbar.style.boxShadow = '0 4px 24px rgba(0, 0, 0, 0.3)';
+
+    if (currentScroll > 50) {
+        navbar.style.background = 'rgba(5, 5, 5, 0.9)';
+        navbar.style.borderBottom = '1px solid var(--border-subtle)';
     } else {
-        navbar.style.background = 'rgba(10, 10, 15, 0.8)';
-        navbar.style.boxShadow = 'none';
+        navbar.style.background = 'rgba(5, 5, 5, 0.7)';
+        navbar.style.borderBottom = '1px solid transparent';
     }
-    
-    lastScroll = currentScroll;
 });
 
 // Parallax effect for gradient orbs
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const orbs = document.querySelectorAll('.gradient-orb');
-    
-    orbs.forEach((orb, index) => {
-        const speed = 0.3 + (index * 0.1);
-        orb.style.transform = `translateY(${scrolled * speed}px)`;
-    });
-});
+// Parallax effect removed for minimal theme
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
@@ -68,13 +57,13 @@ document.querySelectorAll('.skill-category, .project-card, .timeline-item').forE
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section[id]');
     const scrollY = window.pageYOffset;
-    
+
     sections.forEach(section => {
         const sectionHeight = section.offsetHeight;
         const sectionTop = section.offsetTop - 100;
         const sectionId = section.getAttribute('id');
         const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-        
+
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.style.color = 'var(--text-secondary)';
@@ -87,16 +76,7 @@ window.addEventListener('scroll', () => {
 });
 
 // Glass card hover effect with mouse tracking
-document.querySelectorAll('.skill-category, .project-card, .timeline-content').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        
-        card.style.setProperty('--mouse-x', `${x}px`);
-        card.style.setProperty('--mouse-y', `${y}px`);
-    });
-});
+// Glass card hover effect removed for minimal theme
 
 // Typing effect for hero title (optional - can be disabled)
 const heroTitle = document.querySelector('.hero-title');
@@ -104,7 +84,7 @@ if (heroTitle && heroTitle.dataset.typing === 'true') {
     const text = heroTitle.textContent;
     heroTitle.textContent = '';
     let i = 0;
-    
+
     function typeWriter() {
         if (i < text.length) {
             heroTitle.textContent += text.charAt(i);
@@ -112,7 +92,7 @@ if (heroTitle && heroTitle.dataset.typing === 'true') {
             setTimeout(typeWriter, 50);
         }
     }
-    
+
     setTimeout(typeWriter, 500);
 }
 
