@@ -157,3 +157,28 @@ if (footer) {
 }
 
 console.log('%c Portfolio loaded successfully! 🚀', 'color: #00d9ff; font-size: 16px; font-weight: bold;');
+
+// Dynamic Page Fading on Scroll
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section');
+    const scrollY = window.scrollY;
+
+    // Fading sections based on scroll position
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        const sectionCenter = rect.top + rect.height / 2;
+        const viewportCenter = windowHeight / 2;
+
+        // Calculate distance from center
+        const distance = Math.abs(viewportCenter - sectionCenter);
+        const maxDist = windowHeight * 0.7; // Start fading when 70% away from center
+
+        // Calculate opacity: 1 at center, fading to 0.4 at edges
+        let opacity = 1 - Math.min((distance / maxDist), 0.6);
+
+        section.style.opacity = opacity.toFixed(2);
+        section.style.transform = `scale(${0.95 + (opacity * 0.05)})`;
+        section.style.transition = 'opacity 0.1s ease-out, transform 0.1s ease-out';
+    });
+});
