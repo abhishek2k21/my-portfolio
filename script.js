@@ -45,7 +45,9 @@ const revealObserver = new IntersectionObserver((entries) => {
                 });
             }
 
-            revealObserver.unobserve(entry.target);
+            // navigate away
+        } else {
+            entry.target.classList.remove('active');
         }
     });
 }, {
