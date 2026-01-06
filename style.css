@@ -98,3 +98,267 @@ body {
         flex-direction: column;
     }
 }
+
+/* --- Component Styles --- */
+
+/* Profile Card */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 12px;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pulse-dot {
+    width: 8px;
+    height: 8px;
+    background: #10b981;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.4);
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #fff, #888);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.bio {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    max-width: 90%;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 2rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background: var(--text-primary);
+    color: var(--bg-deep);
+}
+
+.btn-primary:hover {
+    background: #ddd;
+}
+
+.btn-icon {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    width: 42px;
+    padding: 0;
+}
+
+.btn-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Terminal Card */
+.terminal-card {
+    background: #0f0f0f;
+    font-family: var(--font-mono);
+    border: 1px solid #333;
+}
+
+.terminal-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.terminal-dots {
+    display: flex;
+    gap: 6px;
+    margin-right: 1rem;
+}
+
+.terminal-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #333;
+}
+
+.terminal-dots span:nth-child(1) {
+    background: #ff5f56;
+}
+
+.terminal-dots span:nth-child(2) {
+    background: #ffbd2e;
+}
+
+.terminal-dots span:nth-child(3) {
+    background: #27c93f;
+}
+
+.terminal-title {
+    color: #666;
+    font-size: 0.8rem;
+}
+
+.terminal-content {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.prompt {
+    color: #27c93f;
+    margin-right: 8px;
+}
+
+.command {
+    color: #fff;
+}
+
+.key {
+    color: #facc15;
+}
+
+.typing-cursor {
+    animation: blink 1s infinite;
+    color: #fff;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Project Card */
+.project-card {
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(145deg, var(--bg-card), #111);
+}
+
+.card-content h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.card-content p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.card-icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--text-secondary);
+    opacity: 0.5;
+}
+
+/* AI & Map Cards */
+.ai-card,
+.map-card {
+    justify-content: space-between;
+}
+
+.ai-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.ai-input-box input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-family: var(--font-sans);
+}
+
+.map-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-secondary);
+    gap: 8px;
+}
+
+.map-content i {
+    color: var(--text-primary);
+}
+
+/* Contact Strip */
+.contact-strip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.email-copy {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+}
+
+.copy-btn {
+    background: none;
+    border: 1px solid #333;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.copy-btn:hover {
+    background: #333;
+}
