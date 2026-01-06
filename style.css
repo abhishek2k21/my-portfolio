@@ -362,3 +362,19 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Timeline List Styles */
+.timeline-list {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.timeline-list li {
+    color: #aaa;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.timeline-list li::marker {
+    color: #333;
+}
