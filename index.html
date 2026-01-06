@@ -6,97 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhishek Kumar | Backend & AI Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400&display=swap"
         rel="stylesheet">
-    <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-    <main class="bento-grid">
+    <div class="aurora-bg"></div>
 
-        <!-- Profile Card (Top Left) -->
-        <div class="card col-span-2 row-span-2 profile-card">
-            <div class="profile-header">
-                <div class="status-badge"><span class="pulse-dot"></span>Available for work</div>
-                <h1 class="name">Abhishek Kumar</h1>
-                <p class="role">Backend & AI Engineer</p>
-                <p class="bio">Architecting scalable microservices and crafting intelligent AI solutions. Focused on
-                    performance, security, and clean code.</p>
-            </div>
-            <div class="profile-actions">
-                <a href="#contact" class="btn btn-primary">Contact Me</a>
-                <a href="https://github.com/abhishek2k21" target="_blank" class="btn btn-icon"><i
-                        data-lucide="github"></i></a>
-                <a href="https://linkedin.com" target="_blank" class="btn btn-icon"><i data-lucide="linkedin"></i></a>
-            </div>
+    <nav class="nav">
+        <div class="logo">Abhishek.dev</div>
+        <div class="nav-links">
+            <a href="#work">Work</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
         </div>
+    </nav>
 
-        <!-- Experience Card (Top Right - Scrollable) -->
-        <div class="card col-span-2 row-span-2 experience-card">
-            <div class="card-header">
-                <h3>Experience</h3>
-            </div>
-            <div class="exp-list">
-                <div class="exp-item">
-                    <div class="exp-date">Nov 2024 - Present</div>
-                    <div class="exp-role">Backend Developer</div>
-                    <div class="exp-company">Digital Human AI Platform</div>
-                    <p class="exp-desc">Architecting orchestration APIs for real-time LLM, STT, and TTS services.
-                        Optimized WebSocket latency for seamless avatar conversations.</p>
-                </div>
-                <div class="exp-item">
-                    <div class="exp-date">Nov 2023 - Oct 2024</div>
-                    <div class="exp-role">Associate Software Engineer</div>
-                    <div class="exp-company">Speedbae Digital</div>
-                    <p class="exp-desc">Owned Checkout & Payment microservices. Reduced API latency by 40% via SQL
-                        optimization. Led zero-downtime payment migration.</p>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero reveal">
+        <div class="hero-label">
+            <div class="pulse"></div> Available for work
         </div>
-
-        <!-- Skills Card (Mid Left) -->
-        <div class="card col-span-2 skills-card">
-            <div class="card-header">
-                <h3>Tech Stack</h3>
-            </div>
-            <div class="skills-grid">
-                <span class="skill-tag"><i data-lucide="coffee"></i> Java</span>
-                <span class="skill-tag"><i data-lucide="server"></i> Spring Boot</span>
-                <span class="skill-tag"><i data-lucide="container"></i> Docker</span>
-                <span class="skill-tag"><i data-lucide="cloud"></i> AWS</span>
-                <span class="skill-tag"><i data-lucide="brain"></i> AI / LLMs</span>
-                <span class="skill-tag"><i data-lucide="database"></i> MySQL</span>
-                <span class="skill-tag"><i data-lucide="network"></i> Microservices</span>
-                <span class="skill-tag"><i data-lucide="layout"></i> React.js</span>
-            </div>
+        <h1>Architecting<br>Intelligence.</h1>
+        <p class="hero-desc">
+            I am Abhishek Kumar, a Backend & AI Engineer building scalable microservices and real-time digital human
+            orchestration systems.
+            Passionate about performance, cleaner code, and the future of AI.
+        </p>
+        <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View My Work</a>
+            <a href="https://github.com/abhishek2k21" target="_blank" class="btn btn-outline">GitHub</a>
         </div>
+    </section>
 
-        <!-- Project 1 (Mid Right) -->
-        <div class="card col-span-2 project-card">
-            <div class="card-content">
-                <div class="project-tag">Featured Work</div>
+    <!-- Work Section -->
+    <section id="work">
+        <h2 class="reveal">Selected Work</h2>
+
+        <!-- Project 1 -->
+        <div class="work-item reveal">
+            <div class="work-visual">
+                <i data-lucide="bot" size="48"></i>
+            </div>
+            <div class="work-content">
                 <h3>Real-time AI Orchestrator</h3>
-                <p>Unified backend interface integrating multiple AI providers (OpenAI, Deepgram, ElevenLabs) for
-                    conversational avatars.</p>
-            </div>
-            <div class="card-icon"><i data-lucide="bot"></i></div>
-        </div>
-
-        <!-- Contact (Bottom) -->
-        <div class="card col-span-4 contact-strip">
-            <div class="email-copy">
-                <span>iamabhishek2k1@gmail.com</span>
-                <button class="copy-btn"><i data-lucide="copy"></i> Copy</button>
+                <p>A unified backend interface integrating OpenAI, Deepgram, and ElevenLabs. Orchestrates real-time
+                    speech-to-text, LLM processing, and text-to-speech for interactive digital avatars.</p>
+                <div class="tech-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">WebSockets</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">AWS</span>
+                </div>
+                <!-- <a href="#" class="work-link">View Project <i data-lucide="arrow-right" size="16"></i></a> -->
             </div>
         </div>
 
-    </main>
+        <!-- Project 2 -->
+        <div class="work-item reverse reveal">
+            <div class="work-visual">
+                <i data-lucide="shopping-cart" size="48"></i>
+            </div>
+            <div class="work-content">
+                <h3>High-Scale E-Commerce</h3>
+                <p>Designed and maintained core Checkout & Payment microservices. Optimized SQL queries to reduce
+                    latency by 40% and led a zero-downtime payment gateway migration.</p>
+                <div class="tech-tags">
+                    <span class="tag">Microservices</span>
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Redis</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="work-item reveal">
+            <div class="work-visual">
+                <i data-lucide="database" size="48"></i>
+            </div>
+            <div class="work-content">
+                <h3>AI Database Manager</h3>
+                <p>An intelligent tool translating natural language queries into complex SQL, powered by GPT-4o.
+                    Simplifies database interaction for non-technical users.</p>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">LangChain</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="reveal">Experience</h2>
+        <div class="timeline reveal">
+
+            <div class="timeline-item">
+                <span class="time-date">Nov 2024 - Present</span>
+                <span class="time-company">Digital Human AI Platform</span>
+                <div class="time-role">Backend Developer</div>
+                <p>Architecting orchestration APIs for real-time AI services. Optimizing WebSocket latency for seamless
+                    avatar conversations. Integrating multiple AI providers behind a unified interface.</p>
+            </div>
+
+            <div class="timeline-item">
+                <span class="time-date">Nov 2023 - Oct 2024</span>
+                <span class="time-company">Speedbae Digital</span>
+                <div class="time-role">Associate Software Engineer</div>
+                <p>Owned Checkout & Payment microservices. Reduced API latency by 40%. Built real-time analytics
+                    dashboards using React and Chart.js.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer reveal" id="contact">
+        <h2>Let's build something.</h2>
+        <div class="socials">
+            <a href="mailto:iamabhishek2k1@gmail.com" class="social-link"><i data-lucide="mail"></i></a>
+            <a href="https://github.com/abhishek2k21" target="_blank" class="social-link"><i
+                    data-lucide="github"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-link"><i data-lucide="linkedin"></i></a>
+            <a href="https://leetcode.com" target="_blank" class="social-link"><i data-lucide="code"></i></a>
+        </div>
+        <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.5;">&copy; 2025 Abhishek Kumar</p>
+    </footer>
 
     <script src="script.js"></script>
     <script>
