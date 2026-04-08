@@ -596,6 +596,16 @@ body {
     margin-bottom: 20px;
 }
 
+.timeline-section {
+    color: var(--accent-primary);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
 .timeline-list {
     list-style: none;
     padding-left: 0;
