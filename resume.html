@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar - Backend Developer Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+            color: #1a1a1a;
+            line-height: 1.38;
+            font-size: 9.8pt;
+            background: #e8e8e8;
+        }
+
+        .resume {
+            width: 8.5in;
+            min-height: 11in;
+            margin: 0 auto;
+            padding: 0.4in 0.5in;
+            background: #fff;
+        }
+
+        /* ── HEADER ── */
+        .header {
+            text-align: center;
+            padding-bottom: 7px;
+            margin-bottom: 7px;
+            border-bottom: 2px solid #111;
+        }
+
+        .header h1 {
+            font-size: 19pt;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #111;
+            margin-bottom: 2px;
+        }
+
+        .header .headline {
+            font-size: 9.5pt;
+            font-weight: 500;
+            color: #444;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        .contact-row {
+            font-size: 9pt;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2px 5px;
+        }
+
+        .contact-row span { white-space: nowrap; }
+        .contact-row .sep { color: #aaa; }
+        .contact-row a { color: #1a1a1a; text-decoration: none; }
+
+        /* ── SECTIONS ── */
+        .section {
+            margin-bottom: 6px;
+        }
+
+        .section-title {
+            font-size: 9.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: #111;
+            border-bottom: 1px solid #bbb;
+            padding-bottom: 1px;
+            margin-bottom: 4px;
+        }
+
+        /* ── SUMMARY ── */
+        .summary-text {
+            font-size: 9.3pt;
+            color: #222;
+            line-height: 1.42;
+        }
+
+        /* ── EXPERIENCE ── */
+        .exp-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .exp-role {
+            font-weight: 700;
+            font-size: 10pt;
+            color: #111;
+        }
+
+        .exp-date {
+            font-size: 9pt;
+            color: #555;
+            white-space: nowrap;
+        }
+
+        .exp-company {
+            font-style: italic;
+            font-size: 9.3pt;
+            color: #333;
+        }
+
+        .exp-location {
+            font-size: 9pt;
+            color: #555;
+        }
+
+        .exp-meta {
+            margin-bottom: 3px;
+        }
+
+        /* ── Bullet lists ── */
+        ul {
+            padding-left: 16px;
+            margin: 0;
+        }
+
+        ul li {
+            font-size: 9.3pt;
+            margin-bottom: 1.5px;
+            color: #222;
+            line-height: 1.36;
+        }
+
+        ul li strong {
+            font-weight: 600;
+            color: #111;
+        }
+
+        /* ── PROJECTS ── */
+        .project-entry {
+            margin-bottom: 3px;
+        }
+
+        .project-name {
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #111;
+        }
+
+        .project-tech {
+            font-weight: 400;
+            color: #555;
+            font-size: 9pt;
+        }
+
+        /* ── SKILLS ── */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 105px 1fr;
+            row-gap: 0.5px;
+            font-size: 9.2pt;
+        }
+
+        .skills-grid .label {
+            font-weight: 600;
+            color: #111;
+        }
+
+        .skills-grid .value {
+            color: #222;
+        }
+
+        /* ── EDUCATION ── */
+        .edu-degree {
+            font-weight: 600;
+            font-size: 9.5pt;
+            color: #111;
+        }
+
+        .edu-school {
+            font-style: italic;
+            font-size: 9.2pt;
+            color: #333;
+        }
+
+        .edu-meta {
+            font-size: 9pt;
+            color: #555;
+        }
+
+        /* ── CERTIFICATIONS ── */
+        .cert-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 16px;
+            padding-left: 16px;
+        }
+
+        .cert-row li {
+            font-size: 9.2pt;
+            color: #222;
+            width: calc(50% - 8px);
+        }
+
+        /* ── PRINT ── */
+        @media print {
+            body { background: #fff; }
+            .resume {
+                margin: 0;
+                padding: 0.4in 0.5in;
+                box-shadow: none;
+            }
+        }
+
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        /* ── PROJECT LINKS ── */
+        .project-name a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .project-name a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+
+        <!-- ═══════════════ HEADER ═══════════════ -->
+        <header class="header">
+            <h1>Abhishek Kumar</h1>
+            <div class="headline">Backend Developer &nbsp;|&nbsp; Java · Spring Boot · Distributed Systems · E-commerce</div>
+            <div class="contact-row">
+                <span>Bangalore, Karnataka</span>
+                <span class="sep">•</span>
+                <span>+91 9504892980</span>
+                <span class="sep">•</span>
+                <span><a href="mailto:iamabhishek2k1@gmail.com">iamabhishek2k1@gmail.com</a></span>
+                <span class="sep">•</span>
+                <span><a href="https://www.linkedin.com/in/abhishek-kumar-029625240/">LinkedIn</a></span>
+                <span class="sep">•</span>
+                <span><a href="https://github.com/abhishek2k21">GitHub</a></span>
+                <span class="sep">•</span>
+                <span><a href="https://abhishek2k21.github.io/my-portfolio/">Portfolio</a></span>
+                <span class="sep">•</span>
+                <span><a href="https://leetcode.com/u/0DEtjpS3OH/">LeetCode</a></span>
+            </div>
+        </header>
+
+        <!-- ═══════════════ SUMMARY ═══════════════ -->
+        <section class="section">
+            <h2 class="section-title">Summary</h2>
+            <p class="summary-text">
+                Backend Developer with 2+ years of experience building <strong>scalable, high-throughput microservices</strong> for e-commerce and last-mile delivery at Speedbae. Skilled in designing <strong>inventory consistency, order lifecycle orchestration, and real-time tracking systems</strong> handling thousands of daily transactions. Strong focus on <strong>performance optimization, data integrity, and fault-tolerant system design</strong> using Java, Spring Boot, MySQL, and Cassandra.
+            </p>
+        </section>
+
+        <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+        <section class="section">
+            <h2 class="section-title">Professional Experience</h2>
+
+            <div class="exp-row">
+                <span class="exp-role">Backend Developer — Product Service Team</span>
+                <span class="exp-date">Mar 2024 – Present</span>
+            </div>
+            <div class="exp-row exp-meta">
+                <span class="exp-company">Speedbae (E-commerce Delivery Startup)</span>
+                <span class="exp-location">Bangalore, India</span>
+            </div>
+
+            <ul>
+                <li><strong>Order Lifecycle:</strong> Designed end-to-end order services (placed → confirmed → packed → dispatched → delivered) using Spring Boot; reduced processing latency from <strong>4.2s → 1.8s (~57%)</strong> by optimizing service flow and JPA queries.</li>
+                <li><strong>Inventory System:</strong> Engineered inventory reservation and release service handling <strong>10,000+ SKUs</strong> with transactional safeguards; reduced stock discrepancies by <strong>~35%</strong> and cut stock lookup latency from <strong>380ms → 210ms</strong> via query and indexing optimization.</li>
+                <li><strong>Real-Time Tracking:</strong> Built event-driven tracking pipeline writing delivery updates to Cassandra; slashed tracking latency from <strong>~40s → ~12s</strong> for <strong>5,000+ daily deliveries</strong>, with WebSocket-based live ETA updates.</li>
+                <li><strong>Last-Mile Delivery:</strong> Designed delivery agent assignment and slot management APIs, reducing unassigned order backlog by <strong>~20%</strong>; implemented failure-reason tracking and retry workflows improving re-attempt success by <strong>~18%</strong>.</li>
+                <li><strong>API Design:</strong> Designed and maintained RESTful APIs consumed by mobile and web clients; achieved <strong>99.5%+ uptime</strong> with structured exception handling, retry mechanisms, and monitoring.</li>
+                <li><strong>DevOps & Reliability:</strong> Automated CI/CD using Docker & Jenkins, cutting deployment time from <strong>45 min → 12 min</strong>; wrote unit and integration tests achieving <strong>80%+ code coverage</strong>; owned staging validation and production readiness.</li>
+            </ul>
+        </section>
+
+        <!-- ═══════════════ PROJECTS ═══════════════ -->
+        <section class="section">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="project-entry">
+                <div><span class="project-name"><a href="https://abhishek2k21.github.io/E-Commerce-Backend/" target="_blank">E-Commerce Backend API ↗</a></span> <span class="project-tech">— Java 8, Spring Boot, MySQL, Hibernate, Swagger</span></div>
+                <ul>
+                    <li>Comprehensive REST API for full-featured e-commerce platform with 30+ endpoints, 6 core modules (Auth, Customer, Seller, Product, Cart, Order) handling products, inventory, orders, and session-based authentication.</li>
+                </ul>
+            </div>
+
+            <div class="project-entry">
+                <div><span class="project-name"><a href="https://abhishek2k21.github.io/cognitive-api-agent/" target="_blank">Cognitive API Agent ↗</a></span> <span class="project-tech">— Python, Streamlit, OpenAI, Pydantic-AI</span></div>
+                <ul>
+                    <li>Built AI-powered tool converting natural language → API calls with reasoning layer for request validation, follow-up questions, and execution flow with user confirmation.</li>
+                </ul>
+            </div>
+
+            <div class="project-entry">
+                <div><span class="project-name"><a href="https://abhishek2k21.github.io/DynamicPDFGenerator/" target="_blank">Dynamic PDF Generator API ↗</a></span> <span class="project-tech">— Java 21, Spring Boot, Thymeleaf, Swagger</span></div>
+                <ul>
+                    <li>Enterprise REST API generating structured PDFs (invoices, reports, certificates) from JSON payloads with production-grade error handling, validation, &lt;500ms latency, and 10K+ PDF/hour throughput capacity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══════════════ KEY SKILLS ═══════════════ -->
+        <section class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <span class="label">Backend</span>
+                <span class="value">Java, Spring Boot, JPA/Hibernate, REST APIs, Microservices Architecture, WebSocket</span>
+                <span class="label">Databases</span>
+                <span class="value">MySQL, Cassandra</span>
+                <span class="label">System Design</span>
+                <span class="value">API Design, Data Consistency, Event-Driven Systems, Caching, Fault Tolerance</span>
+                <span class="label">Frontend</span>
+                <span class="value">React.js, JavaScript (ES6+), HTML5, CSS3, Vue.js, Chart.js</span>
+                <span class="label">DevOps & Cloud</span>
+                <span class="value">Docker, Kubernetes, Jenkins, CI/CD, AWS, GCP, Git, Bitbucket</span>
+                <span class="label">Tools</span>
+                <span class="value">Postman, JIRA, Swagger/OpenAPI, Agile/Scrum</span>
+            </div>
+        </section>
+
+        <!-- ═══════════════ EDUCATION ═══════════════ -->
+        <section class="section">
+            <div class="exp-row">
+                <h2 class="section-title" style="flex:1; margin-right:10px;">Education</h2>
+            </div>
+            <div class="exp-row">
+                <span class="edu-degree">B.Tech, Computer Science and Engineering</span>
+                <span class="edu-meta">2020 – 2024</span>
+            </div>
+            <div class="exp-row">
+                <span class="edu-school">CEC, Jharkhand</span>
+                <span class="edu-meta">CGPA: 7.93 / 10</span>
+            </div>
+        </section>
+
+        <!-- ═══════════════ CERTIFICATIONS ═══════════════ -->
+        <section class="section">
+            <h2 class="section-title">Certifications</h2>
+            <ul class="cert-row">
+                <li>Java Programming — Intellipaat (2023)</li>
+                <li>Walmart Advanced Software Engineering — Forage (2024)</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>
