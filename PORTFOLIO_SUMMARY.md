@@ -55,7 +55,7 @@ I've successfully created a stunning new portfolio website inspired by the **Len
 #### 5. **Experience Section**
 - Timeline layout with visual dots and connecting lines
 - Two positions detailed:
-  - **Digital Human AI Platform (AssistArmy)** - Nov 2024 - Present
+  - **Digital Human AI Platform (GoGiver AI)** - Nov 2024 - Present
     - Backend Developer role
     - 5 key achievements listed
   - **Speedbae Digital** - Nov 2023 - Oct 2024
