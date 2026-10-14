@@ -1,0 +1,154 @@
+/* ============================================================
+   SELECTED WORK — full-width case-study rows, plus one compact
+   ============================================================ */
+
+.work-list {
+  border-bottom: var(--bw) solid var(--line);
+}
+
+.work {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr) minmax(0, 1.2fr) auto;
+  gap: var(--s4) var(--s6);
+  padding: var(--s7) var(--s5);
+  border-top: var(--bw) solid var(--line);
+  transition: background-color var(--dur-2) var(--ease);
+}
+
+.work::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 2px;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform var(--dur-2) var(--ease);
+}
+
+.work:hover {
+  background: var(--surface);
+}
+
+.work:hover::before {
+  transform: scaleY(1);
+}
+
+.work__idx {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.08em;
+  color: var(--ink-3);
+  transition: color var(--dur-2) var(--ease);
+}
+
+.work:hover .work__idx {
+  color: var(--accent);
+}
+
+.work__head {
+  display: grid;
+  gap: var(--s3);
+  align-content: start;
+}
+
+.work__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-2xl);
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.work__title a {
+  transition: color var(--dur-2) var(--ease);
+}
+
+.work:hover .work__title a {
+  color: var(--accent);
+}
+
+.work__sub {
+  font-size: var(--fs-base);
+  color: var(--ink-2);
+  max-width: 34ch;
+}
+
+.work__notes {
+  display: grid;
+  gap: var(--s5);
+  align-content: start;
+}
+
+.work__k {
+  margin-bottom: var(--s2);
+  font-family: var(--font-mono);
+  font-size: var(--fs-mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.work__v {
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  color: var(--ink-2);
+  max-width: 52ch;
+  text-wrap: pretty;
+}
+
+.work__links {
+  display: grid;
+  gap: var(--s3);
+  align-content: start;
+  justify-items: end;
+}
+
+/* ---------- compact variant ---------- */
+
+.work--minor {
+  grid-template-columns: 2.5rem minmax(0, 1fr) minmax(0, 1.2fr) auto;
+  padding-block: var(--s6);
+}
+
+.work--minor .work__title {
+  font-size: var(--fs-xl);
+}
+
+.work--minor .work__sub {
+  max-width: 46ch;
+}
+
+/* ============================================================
+   SELECTED WORK — narrow viewports
+   ============================================================ */
+
+@media (max-width: 980px) {
+  .work,
+  .work--minor {
+    grid-template-columns: 2.25rem minmax(0, 1fr);
+    padding: var(--s6) var(--s4);
+  }
+
+  .work__head,
+  .work__notes,
+  .work__links {
+    grid-column: 2;
+  }
+
+  .work__notes {
+    gap: var(--s4);
+  }
+
+  .work__links {
+    justify-items: start;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: var(--s5);
+  }
+
+  .work__sub,
+  .work__v {
+    max-width: 60ch;
+  }
+}
