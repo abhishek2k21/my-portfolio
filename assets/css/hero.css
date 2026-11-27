@@ -38,11 +38,20 @@
 
 .hero__lede {
   max-width: 44ch;
-  margin-bottom: var(--s5);
+  margin-bottom: var(--s4);
   font-family: var(--font-display);
   font-size: clamp(1.125rem, 0.98rem + 0.8vw, 1.5rem);
   line-height: 1.42;
   color: var(--ink-2);
+  text-wrap: pretty;
+}
+
+.hero__summary {
+  max-width: 62ch;
+  margin-bottom: var(--s5);
+  color: var(--ink-2);
+  font-size: var(--fs-base);
+  line-height: 1.65;
   text-wrap: pretty;
 }
 
@@ -80,7 +89,8 @@
     max-width: 14rem;
   }
 
-  .hero__lede {
+  .hero__lede,
+  .hero__summary {
     max-width: 54ch;
   }
 }
