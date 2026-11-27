@@ -6,7 +6,7 @@
     <title>HandOff — AI Agent Supervision</title>
     <meta
       name="description"
-      content="HandOff is an AI agent supervision platform built by a Java backend developer in Bengaluru, India (Remote), with approval gates, live monitoring, and an audit trail for support-ticket operations."
+      content="HandOff is an in-progress AI agent supervision platform by a Java Backend Developer with 2+ years, with JWT, RBAC, approval gates, and an audit trail."
     />
     <meta name="theme-color" content="#0c0c0d" />
     <link rel="canonical" href="https://my-portfolio-ashy-eight-56.vercel.app/work/handoff/" />
@@ -16,7 +16,7 @@
     <meta property="og:title" content="HandOff — AI Agent Supervision" />
     <meta
       property="og:description"
-      content="AI agent supervision platform with approval gates, human oversight, and an audit trail for support-ticket actions. Built in Bengaluru, India (Remote)."
+      content="In-progress AI agent supervision platform with JWT, RBAC, approval gates, and an audit trail. Built in Bengaluru, India (Remote)."
     />
     <meta property="og:url" content="https://my-portfolio-ashy-eight-56.vercel.app/work/handoff/" />
     <meta property="og:image" content="https://my-portfolio-ashy-eight-56.vercel.app/og-image.png" />
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="HandOff — AI Agent Supervision" />
     <meta
       name="twitter:description"
-      content="AI agent supervision platform with approval gates, audit trails, and secure ticket sessions. Built in Bengaluru, India (Remote)."
+      content="In-progress AI agent supervision platform with JWT, RBAC, approval gates, and an audit trail."
     />
     <meta name="twitter:image" content="https://my-portfolio-ashy-eight-56.vercel.app/og-image.png" />
 
@@ -64,7 +64,7 @@
         <a class="brand" href="../../#home">
           <span class="brand__mark" aria-hidden="true">◆</span>
           <span>Abhishek Kumar</span>
-          <span class="brand__role">Java Backend Developer · Bengaluru, India (Remote)</span>
+          <span class="brand__role">Java Backend Developer · 2+ Years</span>
         </a>
 
         <nav class="nav" id="site-nav" aria-label="Case study navigation">
@@ -117,15 +117,14 @@
 
           <p class="case-kicker">Case study</p>
           <h1 class="case-title">HandOff</h1>
-          <p class="case-pitch">AI agent supervision platform. Humans monitor AI agents working on support tickets, with approval gates and an audit trail.</p>
+          <p class="case-pitch">AI agent supervision platform, in progress. Spring Boot backend with approval gates and an audit trail.</p>
           <div class="tag-row" aria-label="Tech stack">
             <span class="tag">Java 21</span>
             <span class="tag">Spring Boot 3</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Flyway</span>
-            <span class="tag">React 19</span>
-            <span class="tag">TypeScript</span>
-            <span class="tag">Vite</span>
+            <span class="tag">Spring Security</span>
+            <span class="tag">PostgreSQL 16</span>
+            <span class="tag">Redis 7</span>
+            <span class="tag">Docker Compose</span>
           </div>
           <div class="case-links">
             <a class="case-link" href="https://github.com/abhishek2k21/HandOff" target="_blank" rel="noopener noreferrer">
@@ -153,13 +152,13 @@
               </div>
               <div class="case-meta">
                 <span class="case-meta__label">Stack</span>
-                <span class="case-meta__value">Java 21, Spring Boot 3, PostgreSQL, Flyway, React 19, TypeScript, Vite</span>
+                <span class="case-meta__value">Java 21, Spring Boot 3, Spring Security, PostgreSQL 16, Redis 7, Docker Compose</span>
               </div>
             </div>
 
             <div class="case-copy">
-              <p>When an AI agent acts on a real support ticket, the main risk is not whether the task is done. The risk is whether a human can still see what happened, approve the right actions, and stop bad outcomes before they spread.</p>
-              <p>That creates a supervision problem rather than only a model problem. The system needs authenticated sessions, secure ticket channels, and an audit trail that can explain each step after the fact.</p>
+              <p>When an AI agent takes an action, the main risk is not whether the task is done. The risk is whether a human can still see what happened, approve the right actions, and stop bad outcomes before they spread.</p>
+              <p>That creates a supervision problem rather than only a model problem. The backend needs authenticated sessions, approval gates, and an audit trail that can explain each step after the fact.</p>
             </div>
           </div>
         </section>
@@ -171,7 +170,7 @@
           </div>
 
           <div class="case-copy">
-            <p>AI agents can take actions on behalf of a team, but there is no real trust without human oversight. In a support workflow, a ticket can move from simple automation to a sensitive operation in a single step, and the system has to make that decision visible.</p>
+            <p>AI agents can take actions on behalf of a team, but there is no real trust without human oversight. An automated step can become a sensitive operation in a single move, and the system has to make that decision visible.</p>
             <p>Without secure session handling and approval gates, the agent layer becomes hard to audit and easy to misuse. The platform needed a clear boundary between automated work and real human sign-off.</p>
           </div>
         </section>
@@ -183,12 +182,12 @@
           </div>
 
           <ul class="case-bullets">
-            <li>JWT and RBAC for role-based access to ticket operations and admin functions.</li>
+            <li>JWT and RBAC for role-based access.</li>
             <li>Refresh-token rotation with reuse detection to reduce token theft and replay risks.</li>
             <li>Redis rate limiting to slow abuse and prevent repeated high-volume requests.</li>
             <li>Single-use WebSocket tickets so each live monitoring session was scoped and not shared across clients.</li>
             <li>Approval gates before important actions reached the next stage.</li>
-            <li>An audit trail for each ticket action and approval decision.</li>
+            <li>An audit trail for each action and approval decision.</li>
           </ul>
         </section>
 
@@ -206,10 +205,10 @@
             <div class="case-figure__body">
               <svg viewBox="0 0 760 360" role="img" aria-labelledby="handoff-svg-title handoff-svg-desc">
                 <title id="handoff-svg-title">HandOff architecture diagram</title>
-                <desc id="handoff-svg-desc">A support dashboard sends ticket actions through a Spring Boot API, which checks JWT and RBAC, stores actions in PostgreSQL, and streams approval events through a single-use WebSocket ticket.</desc>
+                <desc id="handoff-svg-desc">An operator sends actions through a Spring Boot API, which checks JWT and RBAC, stores the audit trail in PostgreSQL, rate-limits with Redis, and streams approval events through a single-use WebSocket ticket.</desc>
                 <g>
                   <rect class="case-arch-box" x="30" y="120" width="150" height="82" rx="4" />
-                  <text class="case-arch-label" x="105" y="160" text-anchor="middle">Support team</text>
+                  <text class="case-arch-label" x="105" y="160" text-anchor="middle">Operator</text>
 
                   <rect class="case-arch-box case-arch-box--accent" x="220" y="52" width="310" height="126" rx="6" />
                   <text class="case-arch-label" x="375" y="111" text-anchor="middle">Spring Boot API</text>
@@ -284,7 +283,7 @@
         "@context": "https://schema.org",
         "@type": "CreativeWork",
         "name": "HandOff",
-        "description": "AI agent supervision platform with approval gates, human oversight, and an audit trail for support-ticket actions.",
+        "description": "In-progress AI agent supervision platform with JWT, RBAC, approval gates, and an audit trail.",
         "url": "https://my-portfolio-ashy-eight-56.vercel.app/work/handoff/",
         "creator": {
           "@type": "Person",

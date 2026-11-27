@@ -24,7 +24,7 @@
     <title>Abhishek Kumar — Java Backend Developer</title>
     <meta
       name="description"
-      content="Java backend developer in Bengaluru, India (Remote), building Spring Boot microservices, REST APIs, event-driven workflows and real-time services for e-commerce and last-mile delivery."
+      content="Java Backend Developer with 2+ years of experience building and owning Spring Boot REST APIs, event-driven order flows, and real-time services for a hyperlocal e-commerce platform."
     />
     <meta name="author" content="Abhishek Kumar" />
     <meta name="theme-color" content="#0c0c0d" />
@@ -41,7 +41,7 @@
     />
     <meta
       property="og:description"
-      content="Java backend developer in Bengaluru, India (Remote), building Spring Boot microservices, REST APIs, event-driven workflows and real-time services."
+      content="Java Backend Developer with 2+ years of experience building Spring Boot REST APIs, Kafka event flows, and real-time services."
     />
     <meta
       property="og:url"
@@ -61,7 +61,7 @@
     />
     <meta
       name="twitter:description"
-      content="Java backend developer in Bengaluru, India (Remote), building Spring Boot microservices, REST APIs, event-driven workflows and real-time services."
+      content="Java Backend Developer with 2+ years of experience building Spring Boot REST APIs, Kafka event flows, and real-time services."
     />
     <meta
       name="twitter:image"
@@ -111,7 +111,7 @@
         <a class="brand" href="#home">
           <span class="brand__mark" aria-hidden="true">◆</span>
           <span>Abhishek Kumar</span>
-          <span class="brand__role">Java Backend Developer</span>
+          <span class="brand__role">Java Backend Developer · 2+ Years</span>
         </a>
 
         <nav class="nav" id="site-nav" aria-label="Sections">
@@ -166,22 +166,31 @@
             <div class="hero__main">
               <p class="hero__eyebrow">
                 <span class="led" aria-hidden="true"></span>
-                Java Backend Developer — Bengaluru, India (Remote)
+                Java Backend Developer · 2+ Years — Bengaluru, India (Remote)
               </p>
 
               <h1 class="hero__name">Abhishek<br /><em>Kumar</em></h1>
 
               <p class="hero__lede">
-                Java backend developer building Spring Boot microservices, REST
-                APIs, event-driven workflows and real-time services for
-                e-commerce and last-mile delivery.
+                Java Backend Developer with 2+ years of experience building and
+                owning 25+ Spring Boot REST APIs for a hyperlocal e-commerce
+                platform at Speedbae Digital.
+              </p>
+              <p class="hero__summary">
+                Hands-on with Core and Advanced Java, Spring Boot, Hibernate/JPA,
+                Kafka, Redis, MySQL, Cassandra, Docker and AWS. Solved race
+                conditions, DB deadlocks and cross-service data inconsistency
+                (saga, outbox), secured APIs with JWT and RBAC, and built
+                event-driven order flows. Strong in DSA (200+ LeetCode
+                problems), OOP, design patterns and multithreading.
               </p>
 
               <div class="tag-row hero__stack">
                 <span class="tag">Spring Boot</span>
+                <span class="tag">Microservices</span>
                 <span class="tag">Kafka</span>
                 <span class="tag">Redis</span>
-                <span class="tag">Microservices</span>
+                <span class="tag">AWS</span>
               </div>
 
               <div class="hero__cta">
@@ -451,33 +460,37 @@
                     >PulseGate</a
                   >
                 </h3>
-                <p class="work__sub">Reactive API gateway on Spring WebFlux</p>
+                <p class="work__sub">Distributed API gateway</p>
                 <div class="tag-row">
-                  <span class="tag">Java</span>
-                  <span class="tag">Spring WebFlux</span>
+                  <span class="tag">Java 17</span>
+                  <span class="tag">Spring Boot 3</span>
+                  <span class="tag">WebFlux</span>
                   <span class="tag">Redis</span>
-                  <span class="tag">Lua</span>
+                  <span class="tag">Kafka</span>
+                  <span class="tag">PostgreSQL</span>
                   <span class="tag">Prometheus</span>
                   <span class="tag">Grafana</span>
+                  <span class="tag">Docker</span>
+                  <span class="tag">Kubernetes</span>
                 </div>
               </div>
               <div class="work__notes">
                 <div>
                   <p class="work__k">Problem</p>
                   <p class="work__v">
-                    Rate limits have to hold across replicas rather than per
-                    instance, and the gateway needs to shed load before one slow
-                    dependency takes the service down with it.
+                    Rate limits have to stay accurate when any replica can take
+                    the request, and a slow dependency should not take the
+                    gateway down with it.
                   </p>
                 </div>
                 <div>
                   <p class="work__k">Built</p>
                   <p class="work__v">
-                    Atomic Redis Lua scripts implementing token-bucket,
-                    sliding-window and fixed-window limiters that stay correct
-                    across replicas. An adaptive circuit breaker, a live
-                    WebSocket dashboard for gateway state, and Prometheus +
-                    Grafana instrumentation. Load-tested with Artillery.
+                    Reactive Spring WebFlux gateway with Redis Lua token-bucket,
+                    sliding-window and fixed-window rate limiting that stays
+                    accurate across replicas, plus a Redis-backed adaptive
+                    circuit breaker. Load-tested throughput, latency and
+                    rate-limit behavior with Artillery.
                   </p>
                 </div>
               </div>
@@ -513,36 +526,34 @@
                     >HandOff</a
                   >
                 </h3>
-                <p class="work__sub">AI agent supervision platform</p>
+                <p class="work__sub">
+                  AI agent supervision platform (in progress)
+                </p>
                 <div class="tag-row">
                   <span class="tag">Java 21</span>
                   <span class="tag">Spring Boot 3</span>
-                  <span class="tag">PostgreSQL</span>
-                  <span class="tag">Flyway</span>
-                  <span class="tag">React 19</span>
-                  <span class="tag">TypeScript</span>
-                  <span class="tag">Vite</span>
+                  <span class="tag">Spring Security</span>
+                  <span class="tag">PostgreSQL 16</span>
+                  <span class="tag">Redis 7</span>
+                  <span class="tag">Docker Compose</span>
                 </div>
               </div>
               <div class="work__notes">
                 <div>
                   <p class="work__k">Problem</p>
                   <p class="work__v">
-                    Once an AI agent acts on real support tickets, you need to
-                    see what it is doing, stop it at the right moments, and be
-                    able to show afterwards exactly what happened.
+                    Once an AI agent takes an action, you need to see what it
+                    is doing, stop it at the right moments, and be able to show
+                    afterwards exactly what happened.
                   </p>
                 </div>
                 <div>
                   <p class="work__k">Built</p>
                   <p class="work__v">
-                    A supervision layer for AI agents on support tickets: live
-                    monitoring, human approval gates before consequential
-                    actions, and an audit trail. Security covers JWT +
-                    RBAC, refresh-token rotation with reuse detection,
-                    Redis-backed rate limiting and single-use WebSocket tickets.
-                    Java 21 and Spring Boot 3 on PostgreSQL with Flyway
-                    migrations, React 19 and TypeScript on the front end.
+                    Spring Boot 3 backend with JWT auth, RBAC, refresh-token
+                    rotation with reuse detection, Redis rate limiting,
+                    single-use WebSocket tickets, approval gates and an audit
+                    trail.
                   </p>
                 </div>
               </div>
@@ -567,68 +578,6 @@
               </div>
             </article>
 
-            <article class="work work--minor reveal" style="--i: 2">
-              <p class="work__idx">01.3</p>
-              <div class="work__head">
-                <h3 class="work__title">
-                  <a
-                    href="https://abhishek2k21.github.io/cognitive-api-agent"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Cognitive API Agent</a
-                  >
-                </h3>
-                <div class="tag-row">
-                  <span class="tag">Python</span>
-                  <span class="tag">Streamlit</span>
-                  <span class="tag">OpenAI</span>
-                  <span class="tag">Pydantic-AI</span>
-                </div>
-              </div>
-              <div class="work__notes">
-                <div>
-                  <p class="work__k">Problem</p>
-                  <p class="work__v">
-                    Calling an API usually means reading docs and writing the
-                    request by hand. This tool lets you describe what you want
-                    in plain English.
-                  </p>
-                </div>
-                <div>
-                  <p class="work__k">Built</p>
-                  <p class="work__v">
-                    An AI tool that turns plain English into API calls. A
-                    reasoning layer checks the request is valid, and the user
-                    confirms before anything is executed. Built with Python,
-                    Streamlit, OpenAI and Pydantic-AI.
-                  </p>
-                </div>
-              </div>
-              <div class="work__links">
-                <a
-                  class="link-arrow"
-                  href="https://abhishek2k21.github.io/cognitive-api-agent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Live demo
-                  <svg class="i i--sm" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 17 17 7M9 7h8v8" />
-                  </svg>
-                </a>
-                <a
-                  class="link-arrow"
-                  href="https://github.com/abhishek2k21/cognitive-api-agent"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub
-                  <svg class="i i--sm" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M7 17 17 7M9 7h8v8" />
-                  </svg>
-                </a>
-              </div>
-            </article>
           </div>
         </div>
       </section>
@@ -645,74 +594,98 @@
             <article class="tl__item reveal" style="--i: 0">
               <p class="tl__date">Jul 2024 — Present<br />Remote</p>
               <div>
-                <h3 class="tl__role">Backend Software Engineer</h3>
+                <h3 class="tl__role">Back End Developer</h3>
                 <p class="tl__org">
-                  Speedbae Digital Pvt. Ltd. · E-commerce and Last-Mile Delivery
-                  Startup<br />
-                  Client project: Exotyq, an artisan marketplace
-                  (shop.exotyq.com)
+                  Speedbae Digital Pvt. Ltd. · Early-stage startup, 16 people<br />
+                  Hyperlocal e-commerce platform that builds online stores for
+                  local shops. Client stores include shop.exotyq.com
                 </p>
                 <ul class="tl__list">
                   <li>
-                    Order APIs: Built order-lifecycle and rider-assignment APIs
-                    with Java 17, Spring Boot, Spring Data JPA and MySQL. Found
-                    and fixed N+1 query problems using batch fetching.
+                    APIs &amp; Code Quality: Delivered and owned 25+ REST APIs
+                    in Java 17, Spring Boot, Spring Data JPA and MySQL for
+                    stores, catalog, cart, orders and delivery; refactored a
+                    large service class into clean controller, service and
+                    repository layers, versioned APIs with Swagger/OpenAPI docs
+                    and added JUnit 5 and Mockito unit tests.
                   </li>
                   <li>
-                    Catalog Caching: Added Redis cache-aside for catalog
-                    endpoints and stock-update handling, to cut repeated
-                    database reads and keep inventory data consistent.
+                    Concurrency: Eliminated overselling during concurrent
+                    checkouts, cutting negative-stock incidents from ~5/month
+                    to zero, by adding optimistic locking (@Version) with retry
+                    on stock updates; reduced failed checkouts by ~90% by
+                    resolving intermittent MySQL deadlocks in order and stock
+                    transactions through consistent lock ordering and shorter
+                    transaction scope.
                   </li>
                   <li>
-                    Webhook Processing: Built Kafka consumers for Shopify order
-                    and refund webhooks, with idempotent processing and
-                    dead-letter handling for failed events.
+                    Event-Driven &amp; Async: Ended duplicate SMS/email alerts
+                    entirely with idempotent Kafka consumers, after decoupling
+                    the order flow into Kafka events feeding inventory,
+                    notifications and the seller dashboard; kept services
+                    consistent with saga and outbox patterns, worked down
+                    consumer lag, and moved emails, PDFs and image resizing
+                    into queues and scheduled jobs.
                   </li>
                   <li>
-                    Catalog Ingestion: Automated vendor product-feed ingestion
-                    to reduce manual catalog onboarding work.
+                    Real-Time Tracking: Delivered sub-second order updates to
+                    customers for ~50 concurrent riders by designing rider
+                    tracking with GPS pings every ~5s stored in Cassandra and
+                    pushed over WebSocket.
                   </li>
                   <li>
-                    Real-Time Rider Tracking: Stored rider GPS updates in
-                    Cassandra and sent live order updates over WebSocket.
+                    Caching &amp; Security: Took repeated reads off MySQL by
+                    caching store and product pages in Redis, which also holds
+                    sessions, OTPs and carts; stopped API abuse with Redis rate
+                    limiting on top of JWT auth with refresh tokens and RBAC;
+                    fixed SQL injection risks and moved exposed secrets into
+                    environment config.
                   </li>
                   <li>
-                    CI/CD: Containerized services with Docker and set up
-                    Jenkins pipelines for repeatable builds, deployments and
-                    rollbacks.
+                    Integrations: Kept order flows working through provider
+                    failures and rate limits by handling errors and limits of
+                    third-party SMS, email, maps and payment gateway APIs.
+                  </li>
+                  <li>
+                    CI/CD &amp; Observability: Cut release time from ~1 hour of
+                    manual steps to ~10 minutes, enabling ~3 releases a week,
+                    with Jenkins pipelines (Maven build, JUnit tests, Docker
+                    image, deploy); added structured logs, correlation IDs and
+                    alerts, managed per-environment config and secrets, and
+                    debugged production issues from logs.
                   </li>
                 </ul>
                 <p class="tl__tech">
                   <span class="tl__tag">Java 17</span>
                   <span class="tl__tag">Spring Boot</span>
-                  <span class="tl__tag">Spring Security</span>
+                  <span class="tl__tag">Hibernate/JPA</span>
                   <span class="tl__tag">Kafka</span>
                   <span class="tl__tag">Redis</span>
                   <span class="tl__tag">MySQL</span>
                   <span class="tl__tag">Cassandra</span>
-                  <span class="tl__tag">Shopify APIs</span>
                   <span class="tl__tag">Docker</span>
-                  <span class="tl__tag">AWS S3</span>
-                  <span class="tl__tag">WebSocket</span>
                   <span class="tl__tag">Jenkins</span>
-                  <span class="tl__tag">ELK Stack</span>
+                  <span class="tl__tag">AWS S3</span>
+                  <span class="tl__tag">ELK</span>
                 </p>
               </div>
             </article>
 
             <article class="tl__item tl__item--quiet reveal" style="--i: 1">
-              <p class="tl__date">Nov 2023 — Jan 2024<br />Jamshedpur, India</p>
+              <p class="tl__date">Nov 2023 — Jan 2024</p>
               <div>
-                <h3 class="tl__role">Java Developer Intern</h3>
+                <h3 class="tl__role">Backend Developer Intern</h3>
                 <p class="tl__org">Speedbae Digital Pvt. Ltd.</p>
                 <ul class="tl__list">
                   <li>
-                    Built and tested Spring Boot REST APIs for order and rider
-                    modules using Spring Data JPA, JUnit 5 and Mockito.
+                    Built Spring Boot REST APIs for order and rider modules
+                    with Java, Spring Data JPA and MySQL; fixed bugs in
+                    existing endpoints.
                   </li>
                   <li>
-                    Added JWT authentication filters for protected endpoints,
-                    documented APIs with Swagger/OpenAPI, and set up Jenkins CI
+                    Wrote JUnit 5 and Mockito unit tests covering edge cases
+                    and regression scenarios; added JWT authentication filters,
+                    documented APIs with Swagger/OpenAPI and set up Jenkins CI
                     test runs.
                   </li>
                 </ul>
@@ -732,36 +705,108 @@
 
           <div class="skills">
             <div class="skills__group reveal" style="--i: 0">
-              <h3 class="skills__label">Languages &amp; Frameworks</h3>
+              <h3 class="skills__label">Languages</h3>
               <div class="tag-row">
+                <span class="tag">Java 8</span>
+                <span class="tag">Java 11</span>
                 <span class="tag">Java 17</span>
-                <span class="tag">Spring Boot</span>
-                <span class="tag">Spring Security</span>
-                <span class="tag">Spring Data JPA</span>
-                <span class="tag">REST APIs</span>
-                <span class="tag">WebSocket</span>
+                <span class="tag">Java 21</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Python</span>
               </div>
             </div>
             <div class="skills__group reveal" style="--i: 1">
-              <h3 class="skills__label">Data &amp; Messaging</h3>
+              <h3 class="skills__label">Core &amp; Advanced Java</h3>
               <div class="tag-row">
-                <span class="tag">MySQL</span>
-                <span class="tag">Cassandra</span>
-                <span class="tag">Redis</span>
-                <span class="tag">Kafka</span>
-                <span class="tag">Shopify APIs</span>
+                <span class="tag">OOP</span>
+                <span class="tag">Collections</span>
+                <span class="tag">Streams &amp; Lambdas</span>
+                <span class="tag">Multithreading</span>
+                <span class="tag">Exception Handling</span>
+                <span class="tag">JDBC</span>
+                <span class="tag">Jakarta EE</span>
               </div>
             </div>
             <div class="skills__group reveal" style="--i: 2">
-              <h3 class="skills__label">Platform &amp; Delivery</h3>
+              <h3 class="skills__label">Frameworks</h3>
               <div class="tag-row">
-                <span class="tag">Docker</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Spring MVC</span>
+                <span class="tag">Spring Data JPA</span>
+                <span class="tag">Hibernate</span>
+                <span class="tag">Spring Security</span>
+                <span class="tag">Spring WebFlux</span>
+              </div>
+            </div>
+            <div class="skills__group reveal" style="--i: 3">
+              <h3 class="skills__label">Architecture</h3>
+              <div class="tag-row">
+                <span class="tag">Microservices</span>
+                <span class="tag">RESTful APIs</span>
+                <span class="tag">API Versioning</span>
+                <span class="tag">Event-Driven</span>
+                <span class="tag">Saga</span>
+                <span class="tag">Transactional Outbox</span>
+                <span class="tag">Design Patterns</span>
+                <span class="tag">SOLID</span>
+              </div>
+            </div>
+            <div class="skills__group reveal" style="--i: 4">
+              <h3 class="skills__label">Data &amp; Caching</h3>
+              <div class="tag-row">
+                <span class="tag">MySQL</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Apache Cassandra</span>
+                <span class="tag">Redis</span>
+                <span class="tag">SQL Query Optimization</span>
+              </div>
+            </div>
+            <div class="skills__group reveal" style="--i: 5">
+              <h3 class="skills__label">Messaging &amp; Async</h3>
+              <div class="tag-row">
+                <span class="tag">Apache Kafka</span>
+                <span class="tag">Idempotent Consumers</span>
+                <span class="tag">Consumer Lag</span>
+                <span class="tag">Dead-Letter Topics</span>
+                <span class="tag">Scheduled Jobs</span>
+                <span class="tag">WebSocket</span>
+              </div>
+            </div>
+            <div class="skills__group reveal" style="--i: 6">
+              <h3 class="skills__label">Security</h3>
+              <div class="tag-row">
+                <span class="tag">JWT &amp; Refresh Tokens</span>
+                <span class="tag">RBAC</span>
+                <span class="tag">Rate Limiting</span>
+                <span class="tag">SQL Injection Prevention</span>
+                <span class="tag">Secrets Management</span>
+              </div>
+            </div>
+            <div class="skills__group reveal" style="--i: 7">
+              <h3 class="skills__label">Cloud &amp; DevOps</h3>
+              <div class="tag-row">
+                <span class="tag">AWS EC2</span>
                 <span class="tag">AWS S3</span>
+                <span class="tag">CloudWatch</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
                 <span class="tag">Jenkins</span>
-                <span class="tag">ELK Stack</span>
+                <span class="tag">CI/CD</span>
+                <span class="tag">Maven</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+            <div class="skills__group reveal" style="--i: 8">
+              <h3 class="skills__label">Testing &amp; Observability</h3>
+              <div class="tag-row">
                 <span class="tag">JUnit 5</span>
                 <span class="tag">Mockito</span>
                 <span class="tag">Swagger/OpenAPI</span>
+                <span class="tag">Structured Logging</span>
+                <span class="tag">Correlation IDs</span>
+                <span class="tag">Alerting</span>
+                <span class="tag">ELK Stack</span>
+                <span class="tag">Grafana</span>
               </div>
             </div>
           </div>
@@ -778,9 +823,9 @@
 
           <div class="edu">
             <article class="edu__card reveal" style="--i: 0">
-              <p class="edu__meta">Oct 2020 — Jun 2024</p>
+              <p class="edu__meta">2020 — 2024</p>
               <h3 class="edu__school">B.Tech, Computer Science &amp; Engineering</h3>
-              <p class="edu__org">Chaibasa Engineering College</p>
+              <p class="edu__org">Chaibasa Engineering College, Jharkhand</p>
               <p class="edu__stat">
                 <span>CGPA</span>
                 7.93/10
@@ -844,7 +889,7 @@
           <div class="contact__grid">
             <div class="reveal" style="--i: 0">
               <p class="contact__pitch">
-                Building thoughtful backend systems from
+                Java Backend Developer with 2+ years, building from
                 <em>Bengaluru, India (Remote)</em>.
               </p>
               <a
@@ -948,7 +993,7 @@
         "@type": "Person",
         "name": "Abhishek Kumar",
         "jobTitle": "Java Backend Developer",
-        "description": "Java backend developer based in Bengaluru, India (Remote).",
+        "description": "Java Backend Developer with 2+ years of experience, based in Bengaluru, India (Remote).",
         "url": "https://my-portfolio-ashy-eight-56.vercel.app/",
         "address": {
           "@type": "PostalAddress",

@@ -6,7 +6,7 @@
     <title>PulseGate — Reactive API Gateway</title>
     <meta
       name="description"
-      content="PulseGate is a reactive API gateway built by a Java backend developer in Bengaluru, India (Remote), with distributed rate limiting, adaptive circuit breaking, a live dashboard, and Prometheus metrics."
+      content="PulseGate is a distributed API gateway by a Java Backend Developer with 2+ years: Spring WebFlux, Redis Lua rate limiting across replicas, and a Redis-backed adaptive circuit breaker."
     />
     <meta name="theme-color" content="#0c0c0d" />
     <link rel="canonical" href="https://my-portfolio-ashy-eight-56.vercel.app/work/pulsegate/" />
@@ -16,7 +16,7 @@
     <meta property="og:title" content="PulseGate — Reactive API Gateway" />
     <meta
       property="og:description"
-      content="Reactive API gateway on Spring WebFlux with distributed rate limiting, adaptive circuit breaking, and live monitoring. Built in Bengaluru, India (Remote)."
+      content="Reactive Spring WebFlux gateway with Redis Lua rate limiting across replicas and a Redis-backed adaptive circuit breaker. Built in Bengaluru, India (Remote)."
     />
     <meta property="og:url" content="https://my-portfolio-ashy-eight-56.vercel.app/work/pulsegate/" />
     <meta property="og:image" content="https://my-portfolio-ashy-eight-56.vercel.app/og-image.png" />
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="PulseGate — Reactive API Gateway" />
     <meta
       name="twitter:description"
-      content="Reactive API gateway on Spring WebFlux with distributed rate limiting and live monitoring. Built in Bengaluru, India (Remote)."
+      content="Reactive Spring WebFlux gateway with Redis Lua rate limiting across replicas and a Redis-backed adaptive circuit breaker."
     />
     <meta name="twitter:image" content="https://my-portfolio-ashy-eight-56.vercel.app/og-image.png" />
 
@@ -64,7 +64,7 @@
         <a class="brand" href="../../#home">
           <span class="brand__mark" aria-hidden="true">◆</span>
           <span>Abhishek Kumar</span>
-          <span class="brand__role">Java Backend Developer · Bengaluru, India (Remote)</span>
+          <span class="brand__role">Java Backend Developer · 2+ Years</span>
         </a>
 
         <nav class="nav" id="site-nav" aria-label="Case study navigation">
@@ -117,14 +117,18 @@
 
           <p class="case-kicker">Case study</p>
           <h1 class="case-title">PulseGate</h1>
-          <p class="case-pitch">Reactive API gateway on Spring WebFlux with distributed rate limiting.</p>
+          <p class="case-pitch">Distributed API gateway on Spring WebFlux with rate limiting that stays accurate across replicas.</p>
           <div class="tag-row" aria-label="Tech stack">
-            <span class="tag">Java</span>
-            <span class="tag">Spring WebFlux</span>
+            <span class="tag">Java 17</span>
+            <span class="tag">Spring Boot 3</span>
+            <span class="tag">WebFlux</span>
             <span class="tag">Redis</span>
-            <span class="tag">Lua</span>
+            <span class="tag">Kafka</span>
+            <span class="tag">PostgreSQL</span>
             <span class="tag">Prometheus</span>
             <span class="tag">Grafana</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes</span>
           </div>
           <div class="case-links">
             <a class="case-link" href="https://github.com/abhishek2k21/pulsegate" target="_blank" rel="noopener noreferrer">
@@ -152,7 +156,7 @@
               </div>
               <div class="case-meta">
                 <span class="case-meta__label">Stack</span>
-                <span class="case-meta__value">Java, Spring WebFlux, Redis, Lua, Prometheus, Grafana</span>
+                <span class="case-meta__value">Java 17, Spring Boot 3, WebFlux, Redis, Kafka, PostgreSQL (R2DBC), Prometheus, Grafana, Docker, Kubernetes</span>
               </div>
               <div class="case-meta">
                 <span class="case-meta__label">Status</span>
@@ -185,11 +189,10 @@
           </div>
 
           <ul class="case-bullets">
-            <li>Atomic Redis Lua scripts for token-bucket, sliding-window, and fixed-window rate limiting across replicas.</li>
-            <li>An adaptive circuit breaker that reduced pressure on slow or failing downstream services.</li>
-            <li>A live WebSocket dashboard that surfaced gateway state and current conditions.</li>
-            <li>Prometheus and Grafana metrics for traffic, failures, and rate-limit activity.</li>
-            <li>Load testing with Artillery to validate behavior under higher traffic.</li>
+            <li>Redis Lua token-bucket, sliding-window, and fixed-window rate limiting that stays accurate across replicas.</li>
+            <li>A Redis-backed adaptive circuit breaker that sheds load before a slow dependency takes the gateway down.</li>
+            <li>Prometheus and Grafana for throughput, latency, and rate-limit behavior.</li>
+            <li>Load tests with Artillery covering throughput, latency, and rate-limit behavior.</li>
           </ul>
         </section>
 
@@ -301,7 +304,7 @@
         "@context": "https://schema.org",
         "@type": "CreativeWork",
         "name": "PulseGate",
-        "description": "Reactive API gateway on Spring WebFlux with distributed rate limiting, adaptive circuit breaking, and live monitoring.",
+        "description": "Reactive Spring WebFlux gateway with Redis Lua rate limiting across replicas, a Redis-backed adaptive circuit breaker, and Artillery load tests.",
         "url": "https://my-portfolio-ashy-eight-56.vercel.app/work/pulsegate/",
         "creator": {
           "@type": "Person",
